@@ -47,7 +47,19 @@
   // 注意：vars 会在每次 wrangler deploy 时被本文件覆盖（Secrets 不会）。
   // ===========================================================================
   "vars": {
+    "CACHE_DOWNLOAD_LINK": "false",
+    "CACHE_DRIVER": "db",
+    "CACHE_ENABLED": "true",
+    "CACHE_EXCLUDE_DRIVERS": "virtual,alias,url_tree,strm,chunk",
+    "CACHE_FILE_TREE": "true",
+    "CACHE_LINK_TTL": "5",
+    "CACHE_TTL": "0",
+    "DB_CIPHER": "none",
+    "DB_DRIVER": "auto",
+    "DB_FORMAT": "map",
     "ENVIRONMENT": "production",
+    "JWT_SECRET": "NIEgFhmf26ezOzjE",
+    "SINGLEFLIGHT": "auto"
 
     // 数据存储格式：
     //   map（默认）- 整对象序列化为单个 JSON 键值，适合 KV/Blob
